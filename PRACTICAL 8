@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int graph[10][10], visited[10], n;
+
+// DFS
+void DFS(int v) {
+    printf("%d ", v);
+    visited[v] = 1;
+
+    for (int i = 0; i < n; i++) {
+        if (graph[v][i] && !visited[i])
+            DFS(i);
+    }
+}
+
+// BFS
+void BFS(int start) {
+    int queue[10], front = 0, rear = 0;
+
+    for (int i = 0; i < n; i++)
+        visited[i] = 0;
+
+    queue[rear++] = start;
+    visited[start] = 1;
+
+    while (front < rear) {
+        int v = queue[front++];
+        printf("%d ", v);
+
+        for (int i = 0; i < n; i++) {
+            if (graph[v][i] && !visited[i]) {
+                queue[rear++] = i;
+                visited[i] = 1;
+            }
+        }
+    }
+}
+
+int main() {
+    int edges, u, v, start;
+
+    printf("Enter number of vertices: ");
+    scanf("%d", &n);
+
+    printf("Enter number of edges: ");
+    scanf("%d", &edges);
+
+    printf("Enter edges:\n");
+    for (int i = 0; i < edges; i++) {
+        scanf("%d %d", &u, &v);
+        graph[u][v] = graph[v][u] = 1;
+    }
+
+    printf("Enter starting vertex: ");
+    scanf("%d", &start);
+
+    printf("DFS: ");
+    for (int i = 0; i < n; i++)
+        visited[i] = 0;
+    DFS(start);
+
+    printf("\nBFS: ");
+    BFS(start);
+
+    return 0;
+}
