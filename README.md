@@ -122,3 +122,27 @@ Graph traversal is an important technique used to visit all the vertices of a gr
 CONCLUSION :
 
 The graph traversal program successfully implements both DFS and BFS searching techniques using Python. DFS uses a depth-based approach, while BFS visits vertices level by level. Both methods efficiently traverse the vertices and edges of a graph. The program accepts user input, making it flexible for different graph structures and starting vertices. Thus, DFS and BFS are useful and fundamental techniques for solving various graph-based problems.
+# PRACTICAL 8 implementation of graph and searching (DFS and BFS)
+# Graph Traversal – DFS and BFS
+
+This project implements a **Graph** using an adjacency matrix and performs two graph traversal techniques:
+
+- **DFS (Depth First Search)**
+- **BFS (Breadth First Search)**
+
+### Features
+- Creates a graph using vertices and edges.
+- Traverses the graph using DFS.
+- Traverses the graph using BFS.
+- Written in **C**.
+
+### Complexity
+- DFS: **O(V²)**
+- BFS: **O(V²)**
+- Space: **O(V²)**
+
+### Example Output
+```text
+DFS: 0 1 3 4 2
+BFS: 0 1 2 3 4
+```
