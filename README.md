@@ -146,3 +146,26 @@ This project implements a **Graph** using an adjacency matrix and performs two g
 DFS: 0 1 3 4 2
 BFS: 0 1 2 3 4
 ```
+# PRACTICAL 9 Implement prim 's alogiratham
+# Prim's Algorithm
+
+This project implements **Prim's Algorithm** in Python to find the **Minimum Spanning Tree (MST)** of a weighted graph.
+
+### Features
+- Uses a cost/adjacency matrix.
+- Finds the Minimum Spanning Tree.
+- Displays selected edges and minimum total cost.
+- Written in **Python**.
+
+### Complexity
+- Time Complexity: **O(V²)**
+- Space Complexity: **O(V²)**
+
+### Example Output
+```text
+Edges in Minimum Spanning Tree:
+0 - 1 : 2
+1 - 2 : 1
+1 - 3 : 4
+Minimum cost = 7
+```
