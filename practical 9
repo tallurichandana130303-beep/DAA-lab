@@ -1,0 +1,33 @@
+INF = 999
+
+n = int(input("Enter number of vertices: "))
+
+print("Enter the cost matrix:")
+cost = [list(map(int, input().split())) for _ in range(n)]
+
+visited = [False] * n
+visited[0] = True
+
+edges = 0
+total = 0
+
+print("\nEdges in Minimum Spanning Tree:")
+
+while edges < n - 1:
+    minimum = INF
+
+    for i in range(n):
+        if visited[i]:
+            for j in range(n):
+                if not visited[j] and cost[i][j] < minimum:
+                    minimum = cost[i][j]
+                    u = i
+                    v = j
+
+    print(f"{u} - {v} : {minimum}")
+
+    total += minimum
+    visited[v] = True
+    edges += 1
+
+print("Minimum cost =", total)
