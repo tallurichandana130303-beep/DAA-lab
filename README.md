@@ -219,3 +219,28 @@ Python 3
 - Network routing
 - Shortest path problems
 - Graph analysis
+# write a program for traveling salesman
+# Traveling Salesman Problem (TSP)
+
+## Description
+This project implements the Traveling Salesman Problem in Python using the brute-force approach to find the minimum-cost route that visits every city exactly once and returns to the starting city.
+
+## Algorithm
+1. Select the starting city.
+2. Generate all possible routes.
+3. Calculate the total cost of each route.
+4. Find and display the route with the minimum cost.
+
+## Time Complexity
+`O(n!)`
+
+## Space Complexity
+`O(n)`, excluding the input graph.
+
+## Language
+Python 3
+
+## Applications
+- Route optimization
+- Delivery planning
+- Transportation and logistics
