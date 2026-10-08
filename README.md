@@ -169,7 +169,7 @@ Edges in Minimum Spanning Tree:
 1 - 3 : 4
 Minimum cost = 7
 ```
-# implement kruskail's algoritham
+# practical 10 implement kruskail's algoritham
 # Kruskal's Algorithm
 
 ## Description
@@ -194,7 +194,7 @@ This project implements **Kruskal's Algorithm** in Python to find the **Minimum 
 
 ## Language
 - Python 3
-# write a program for Floyd - Warshal algoritham
+#  practical 11 write a program for Floyd - Warshal algoritham
 # Floyd–Warshall Algorithm
 
 ## Description
@@ -219,7 +219,7 @@ Python 3
 - Network routing
 - Shortest path problems
 - Graph analysis
-# write a program for traveling salesman
+# practical 12 write a program for traveling salesman
 # Traveling Salesman Problem (TSP)
 
 ## Description
