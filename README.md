@@ -169,3 +169,28 @@ Edges in Minimum Spanning Tree:
 1 - 3 : 4
 Minimum cost = 7
 ```
+# implement kruskail's algoritham
+# Kruskal's Algorithm
+
+## Description
+This project implements **Kruskal's Algorithm** in Python to find the **Minimum Spanning Tree (MST)** of a weighted, undirected graph.
+
+## Features
+- Sorts edges by weight.
+- Uses **Union-Find (Disjoint Set)** to detect cycles.
+- Constructs the Minimum Spanning Tree.
+- Calculates the total weight of the MST.
+
+## Algorithm
+1. Sort all edges by increasing weight.
+2. Select the smallest edge.
+3. Check for a cycle using Union-Find.
+4. Add the edge if it does not create a cycle.
+5. Continue until the MST contains `V-1` edges.
+
+## Complexity
+- Time: `O(E log E)`
+- Space: `O(V + E)`
+
+## Language
+- Python 3
